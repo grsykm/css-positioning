@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      height: 8000px;
+      font-family: 'Quicksand', sans-serif;
+
+      h4 {}
+    }
+
+    .block {
+      height: 200px;
+      width: 500px;
+      border-style: solid;
+      border-width: 1px;
+      margin: 15px;
+      padding: 15px;
+      -webkit-box-shadow: 14px 17px 0px -1px rgba(235, 205, 223, 1);
+      -moz-box-shadow: 14px 17px 0px -1px rgba(235, 205, 223, 1);
+      box-shadow: 14px 17px 0px -1px rgba(235, 205, 223, 1);
+
+
+    }
+
+    .static {
+      background-color: #F2A0B6;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 10px;
+      right: 200px;
+      background-color: #D96690;
+
+    }
+
+
+    .fixed {
+      background-color: #65A65B;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+
+    }
+
+    .relative {
+      background-color: #679292;
+      position: relative;
+      top: -25px;
+      left: 100px;
+
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="block static">
+    <h4>Static = Default Positioning</h4>
+    <p>I am the default positioning. You don't usually have to input me specifically as I will already be in place unless changed.</p>
+
+  </div>
+  <!-- Default positioning, dont have to put this in as it should already be in place unless changed -->
+  <!-- Static Div ENDS -->
+
+  <div class="block absolute">
+    <h4>Absolute</h4>
+    <p>I am positioned to the viewport or window. I am not the easiest positioning div to work with but I can be handy when I need to be set in a specific place and not move around!</p>
+  </div>
+  <!-- The riskier one out of all positions, dont play around with this too much, only really for staying in a specific place -->
+  <!-- Absolute Div Ends -->
+
+  <div class="block fixed">
+    <h4>Fixed Positioning</h4>
+    <p>I am fixed, even if you scroll, I am positioned relative to the accesskey="viewport or window". I am ideal for design elements such as a search bar or shopping cart as I will stay within the user's sight as they navigate the site.</p>
+  </div>
+  <!-- Will stay in place even with scroll, ideal for search bar for cart etc -->
+  <!-- Fixed Div ENDS -->
+
+  <br>
+  <div class="block relative">
+    <h4>Relative Positioning</h4>
+    <p>I am positioned relative to where I am usually placed. I am an easier version of absolute and more flesible to work with.</p>
+  </div>
+  <!-- The most popular positioning and easiest to position -->
+  <!-- Relative Div ENDS -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+
+  </script>
+
+</body>
+
+</html>
